@@ -1,13 +1,16 @@
-package util;
 
-public abstract class Arrays {
+package util;
+import java.util.Arrays;
+public abstract class misArrays {
 	
 	/**
 	 * devuelve la media de las notas introducidas en el array num
 	 * @param num es un array de numeros de los cuales vamos a calcular la media
 	 * @return devuelve la media de las notas introducidas en el array
+	 * @author Ivan
+	 * @exception si el numero no esta entre 0 y 10 devuelve IllegalArgumentException
 	 */
-	static float mediaNotas(int [] num) {
+	public static float mediaNotas(int [] num) {
 		int sum=0;
 		
 		for (int i=0;i<num.length;i++) {
@@ -18,5 +21,11 @@ public abstract class Arrays {
 		}
 		return sum/num.length;
 	}
+	
+	
+	        
+	        
+
+	
 
 }
