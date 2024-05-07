@@ -57,8 +57,30 @@ public abstract class misArrays {
 	        return valorCentral;
 	    }
 	
-	
-	
+	/**
+	 * 
+	 * devuelve la maxima nota de las notas introducidas en el array num
+	 * @param num es un array de enteros de notas las cuales vamos a encontrar el valor mas alto
+	 * @return la nota mas alta de un array de enteros
+	 * @author Ivan
+	 * @exception si el numero no esta entre 0 y 10 devuelve IllegalArgumentException
+	 */
+	 public static float maximaNota(int [] num) {
+			
+			int max=0;
+			
+			for (int i=0;i<num.length;i++) {
+				if(num[i]<0||num[i]>10) {
+					throw new IllegalArgumentException("Los numeros deben estar entre 0 y 10");
+				}
+				if(num[i]>max) {
+					max=num[i];
+				}else {
+					
+				}
+			}
+			return max;
+		}
 	
 	
 	
