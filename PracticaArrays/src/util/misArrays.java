@@ -81,6 +81,31 @@ public abstract class misArrays {
 			}
 			return max;
 		}
+	 
+	 	/**
+		 * 
+		 * devuelve la minima nota de las notas introducidas en el array num
+		 * @param num es un array de enteros de notas las cuales vamos a encontrar el valor mas bajo
+		 * @return la nota mas baja de un array de enteros
+		 * @author Ivan
+		 * @exception si el numero no esta entre 0 y 10 devuelve IllegalArgumentException
+		 */
+		 public static float minimaNota(int [] num) {
+				
+				int min=10;
+				
+				for (int i=0;i<num.length;i++) {
+					if(num[i]<0||num[i]>10) {
+						throw new IllegalArgumentException("Los numeros deben estar entre 0 y 10");
+					}
+					if(num[i]<min) {
+						min=num[i];
+					}else {
+						
+					}
+				}
+				return min;
+			}
 	
 	
 	
